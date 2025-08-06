@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  position: relative;
+  height: 100px; /* nur zur Demo */
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.eins {
+  display: flex;
+  position: relative;
+  height: 100px;
+}
+
+.drei {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  background-color: #00354d;
+}
+.center h1 {
+  color: white;
+}
+.drei h1 {
+  color: white;
+}
