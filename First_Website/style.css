@@ -132,3 +132,30 @@ body {
   transform: scale(1.05);
   cursor: pointer;
 }
+.Afg {
+  /* variablen -> var die man immer wieder benutzen kann*/
+  /*abstand zwischen fotos*/
+  --gap: 200px;
+  /*wie viele columns es in der grid gibt*/
+  --num-cols: 2;
+  /* höhe von dem row bzw foto*/
+  --row-height: 500px;
+
+  box-sizing: border-box;
+  /* abstand drumherum des foto*/
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+/* pfeil bedeutet element direkt unter klasse*/
+.Afg img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* indem wir das image getargetet haben,
+   haben wir dem image gesagt das der die höhe und breite der tabelle zu 100% einnehmen soll*/
+  object-fit: contain;
+}
