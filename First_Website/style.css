@@ -13,17 +13,11 @@
   transform: translateX(-50%);
 }
 
-.eins {
-  display: flex;
-  position: relative;
-  height: 100px;
-  padding: 10px 10px;
-}
-
 .drei {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  bottom: 850px;
 }
 a {
   text-decoration: none;
@@ -37,6 +31,7 @@ body {
 }
 .drei h1 {
   color: white;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
 }
 
 .container {
@@ -128,6 +123,11 @@ body {
 }
 
 .image h3:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.überschrift h3:hover {
   transition: transform 0.3s ease;
   transform: scale(1.05);
   cursor: pointer;
