@@ -70,7 +70,7 @@ a {
 .container h3 {
   padding: 5px 10px;
   position: absolute;
-  left: 510px;
+  left: 500px;
   top: 320px;
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -94,21 +94,10 @@ a {
   position: relative;
   left: 375px;
   bottom: 150px;
-  opacity: 0;
-  transform: translateY(20px);
-  /*definierter name für @keyframe das er den erkennt*/
-  animation: fadeInUp 1s ease-out forwards;
   background-color: rgba(173, 216, 230, 0.178);
   color: black;
   padding: 20px;
   border-radius: 50px;
-}
-@keyframes fadeInUp {
-  /* am ende der animation*/
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 .auto-text {
   padding: 5px 10px;
@@ -175,6 +164,7 @@ a {
   color: black;
   padding: 20px;
   border-radius: 50px;
+  transition: transform 0.3s ease;
 }
 
 .Afg h3 {
@@ -234,9 +224,6 @@ body {
   background-position: center; /* Zentriert das Bild */
   background-repeat: no-repeat; /* Kein Wiederholen des Bildes */
   height: 200vh; /* Höhe = gesamte Bildschirmhöhe */
-}
-
-body {
   position: relative;
   opacity: 0;
   transform: translateY(20px);
@@ -250,15 +237,12 @@ body {
     transform: translateY(0);
   }
 }
+
 .überschrift h3 {
   background-color: rgba(173, 216, 230, 0.178);
   color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 50px;
-}
-
-.Afg img {
-  transition: transform 0.3s ease;
 }
 .Afg img:hover {
   transform: scale(1.05);
@@ -287,4 +271,12 @@ body {
   transform: translateY(20px);
   /*definierter name für @keyframe das er den erkennt*/
   animation: fadeInUp 1s ease-out forwards;
+}
+
+.Auto .anime {
+  transition: transform 0.3s ease;
+}
+.anime:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
