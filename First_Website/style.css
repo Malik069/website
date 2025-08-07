@@ -4,7 +4,7 @@
   height: 100px; /* nur zur Demo */
   padding: 10px 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-shadow: 4px 4px 4px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.4);
 }
 
 .center {
@@ -23,15 +23,12 @@ a {
   text-decoration: none;
   color: white;
 }
-body {
-  background-color: #00354d;
-}
 .center h1 {
   color: white;
 }
 .drei h1 {
   color: white;
-  text-shadow: 4px 4px 4px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.4);
 }
 
 .container {
@@ -70,7 +67,7 @@ body {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: underline;
-  text-shadow: 4px 4px 4px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.4);
 }
 .Auto {
   --gap: 250px;
@@ -135,7 +132,7 @@ body {
 .Afg {
   /* variablen -> var die man immer wieder benutzen kann*/
   /*abstand zwischen fotos*/
-  --gap: 200px;
+  --gap: 250px;
   /*wie viele columns es in der grid gibt*/
   --num-cols: 2;
   /* höhe von dem row bzw foto*/
@@ -158,4 +155,67 @@ body {
   /* indem wir das image getargetet haben,
    haben wir dem image gesagt das der die höhe und breite der tabelle zu 100% einnehmen soll*/
   object-fit: contain;
+  bottom: 45px;
+  width: 500px;
+  height: 300px;
+  left: 60px;
+}
+
+.Afg h3 {
+  padding: 5px 10px;
+  position: absolute;
+  left: 516px;
+  top: 270px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: underline;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.4);
+}
+
+.container .herkunft {
+  padding: 5px 10px;
+  position: absolute;
+  left: 1287px;
+  top: 340px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: underline;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  font-size: larger;
+}
+.image {
+  transition: transform 0.3s ease;
+}
+.image .herkunft:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.image .herkunft:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.Afg .budda {
+  padding: 5px 10px;
+  position: absolute;
+  left: 1260px;
+  top: 290px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: underline;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  font-size: larger;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/hintergrund.jpg); /* Bildpfad */
+  background-size: cover; /* Deckt den gesamten Bildschirm ab */
+  background-position: center; /* Zentriert das Bild */
+  background-repeat: no-repeat; /* Kein Wiederholen des Bildes */
+  height: 200vh; /* Höhe = gesamte Bildschirmhöhe */
 }
