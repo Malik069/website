@@ -2,6 +2,7 @@
   display: flex;
   position: relative;
   height: 100px; /* nur zur Demo */
+  padding: 10px 10px;
 }
 
 .center {
@@ -14,6 +15,7 @@
   display: flex;
   position: relative;
   height: 100px;
+  padding: 10px 10px;
 }
 
 .drei {
@@ -35,16 +37,15 @@ body {
   color: white;
 }
 
-
 .container {
   /* variablen -> var die man immer wieder benutzen kann*/
   /*abstand zwischen fotos*/
-  --gap: 16px;
+  --gap: 250px;
   /*wie viele columns es in der grid gibt*/
-  --num-cols: 4;
+  --num-cols: 2;
   /* höhe von dem row bzw foto*/
-  --row-height: 300px;
-  
+  --row-height: 500px;
+
   box-sizing: border-box;
   /* abstand drumherum des foto*/
   padding: var(--gap);
@@ -54,12 +55,19 @@ body {
   grid-auto-rows: var(--row-height);
   gap: var(--gap);
 }
-/* pfeil bedeutet target wir wisieren genau dieses image an*/
-.container > img{
-  width: 100%;  
+/* pfeil bedeutet element direkt unter klasse*/
+.container img {
+  position: relative;
+  width: 100%;
   height: 100%;
   /* indem wir das image getargetet haben,
    haben wir dem image gesagt das der die höhe und breite der tabelle zu 100% einnehmen soll*/
-object-fit: cover;
-
+  object-fit: cover;
+}
+.container h3 {
+  padding: 5px 10px;
+  position: absolute;
+  left: 450px;
+  top: 300px;
+  color: white;
 }
