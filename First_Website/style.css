@@ -4,6 +4,7 @@
   height: 100px; /* nur zur Demo */
   padding: 10px 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
 }
 
 .center {
@@ -64,6 +65,7 @@ body {
   /* indem wir das image getargetet haben,
    haben wir dem image gesagt das der die höhe und breite der tabelle zu 100% einnehmen soll*/
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
 .container h3 {
   padding: 5px 10px;
@@ -73,6 +75,7 @@ body {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: underline;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
 }
 .Auto {
   --gap: 250px;
@@ -114,4 +117,18 @@ body {
   transform: translateY(20px);
   /*definierter name für @keyframe das er den erkennt*/
   animation: fadeInUp 1s ease-out forwards;
+}
+
+.image {
+  transition: transform 0.3s ease;
+}
+.image img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.image h3:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+  cursor: pointer;
 }
