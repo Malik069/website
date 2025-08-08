@@ -41,10 +41,22 @@
   border-radius: 20px;
   border: none;
   box-shadow: none;
+  transition: transform 0.3s ease;
+
 }
+#button:hover{transform: scale(1.1);
+  cursor: pointer;
+}
+
 #img {
   position: absolute;
   margin-top: 85px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+#img:hover{
+   transform: scale(1.05);
+  cursor: pointer;
 }
 
 #image-section {
@@ -59,6 +71,7 @@
 #image-section img {
   border-radius: 20px;
   background-color: #1f2937;
+
 }
 .row {
   position: absolute;
@@ -69,24 +82,24 @@
 }
 .subtext {
   position: absolute;
-  bottom: 140px;
+  bottom: 700px;
   left: 490px;
 }
 
 .subtext2 {
   position: absolute;
-  bottom: 140px;
+  bottom: 700px;
   left: 760px;
 }
 
 .subtext3 {
   position: absolute;
-  bottom: 140px;
+  bottom: 700px;
   left: 1020px;
 }
 .subtext4 {
   position: absolute;
-  bottom: 140px;
+  bottom: 700px;
   left: 1280px;
 }
 .über {
@@ -109,4 +122,31 @@
   font-size: x-large;
   font-weight: bold;
   margin-left: 600px;
+}
+
+img{
+  transition: transform 0.3s ease;
+}
+img:hover{transform: scale(1.05);
+  cursor: pointer;
+}
+body {
+  opacity: 0;
+  transform: translateY(20px);
+  /*definierter name für @keyframe das er den erkennt*/
+  animation: fadeInUp 1s ease-out forwards;
+}
+@keyframes fadeInUp {
+  /* am ende der animation*/
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.second-header a{
+  transition: transform 0.3s ease;
+}
+.second-header a:hover{transform: scale(1.1);
+  cursor: pointer;
+  display: inline-block;
 }
