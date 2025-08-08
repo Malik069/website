@@ -10,13 +10,14 @@
 .center {
   position: relative;
   left: 800px;
+  
 }
 
 .drei {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 950px;
+  bottom: 950px
 }
 a {
   text-decoration: none;
@@ -261,7 +262,7 @@ body {
 .afg-text {
   position: absolute;
   left: 220px;
-  bottom: 150px;
+  bottom:150px;
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   opacity: 0;
@@ -277,7 +278,6 @@ body {
   transform: scale(1.05);
   cursor: pointer;
 }
-html,
-body {
+html, body {
   overflow: hidden;
 }
