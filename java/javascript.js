@@ -27,3 +27,19 @@ const actual = max - 13;
 const percentage = actual / max;
 console.log(percentage);
 console.log(actual);
+
+const string = "The revolution will not be televised.";
+console.log(string);
+const badString = string;
+console.log(badString);
+
+let z = 5 + 10;
+console.log(z);
+
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+console.log(length);
+
+let blabla = "Apple, Banana, Kiwi";
+let part = blabla.slice(7, 13);
+console.log(part);
