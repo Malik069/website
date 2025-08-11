@@ -225,3 +225,6 @@ a {
   text-decoration: none;
   color: white;
 }
+html {
+  overflow-x: hidden;
+}
